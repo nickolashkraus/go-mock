@@ -8,7 +8,7 @@ This repository uses [gomock](https://github.com/golang/mock), a mocking framewo
 
 ## Philosophy
 
-To understand testing and mocking in Go, you must understand that the struct you wish to mock must implement an interface, such that a mock struct can be used in its place when executed.
+To understand testing and mocking in Go, you must understand that the struct you wish to mock must implement an interface, such that a mock struct can be used in its place when executing tests.
 
 ## Installation
 
@@ -22,7 +22,7 @@ go install github.com/golang/mock/mockgen@latest
 
 The `mockgen` command is used to generate source code for a mock struct given a Go source file containing interfaces to be mocked.
 
-For a full list of flag, run `mockgen --help`.
+For a full list of flags, run `mockgen --help`.
 
 To generate source code, run:
 
@@ -32,4 +32,3 @@ mockgen -package main -source main.go -destination main_mock.go
 
 # TODO: time
 var Now = time.Now
-
